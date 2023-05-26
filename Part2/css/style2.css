@@ -1,0 +1,189 @@
+/* Typography */ 
+
+html {
+    font-family: 'Fira Sans', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-weight: 600; 
+}
+
+p {
+    font-weight: 300; 
+    line-height: 18px; 
+}
+
+h1{
+    text-align: center;
+}
+
+
+/* Layout */ 
+
+.wrapper {
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.flex {
+    display:flex;
+    gap: 32px;  
+}
+
+#features > div {
+    flex: 1; 
+}
+
+img {
+    max-height: 300px; 
+    width: auto; 
+}
+
+main section {
+    padding: 60px 20px 0 20px; 
+}
+
+/*Table styling*/
+
+#playlist thead tr{
+    background-color: #8cb1a4;
+}
+
+#playlist tbody tr:nth-child(odd){
+    background-color: #9e80ba;
+}
+
+table{
+    border: black solid;
+}
+
+#features table{
+    border: dotted black;
+}
+
+tbody tr:hover{
+    background-color: black;
+    color: white;
+    transition: transform 0.5s;
+        transform: scale(1.1);
+}
+
+#playlist thead tr th{
+    padding: 20px 175px 10px 175px;
+    text-align: center;
+    font-size: 18px;
+}
+    
+#playlist tbody tr td{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        font-size: 16px;
+}
+/* link styling*/
+
+nav a{
+    padding: 5px 4px 3px 4px;
+    margin: 1px 100px 3px 5px;
+    text-decoration: none;
+    background-color: #000000bb;
+    border: #cdbd12 2px solid;
+    border-radius: 1px;
+}
+
+
+nav a:link {
+    color: #c3cace;
+    font-size: 23px;
+
+}
+
+nav a:visited {
+    color: #c3cace;
+
+}
+ 
+
+nav a:focus {
+    border-bottom: 1px solid;
+    color: #bac5cc;
+
+}
+
+nav a:hover {
+    border-bottom: 3px solid;
+    background: #020202;
+    color: aliceblue;
+
+}
+
+nav a:active {
+    color: #959ca0;
+
+}
+
+p a{
+    color: #703498;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1.1rem bold;
+
+}
+a{
+    text-decoration: dashed ;
+    color: #080101;
+    font-size: 1.2rem;
+}
+
+a:hover{
+    text-decoration: solid;
+    transition: transform 0.5s;
+    transform: scale(1.1);
+    background-color: #c3cace;
+    font-size: 1.3rem;
+}
+
+/*image styling*/
+img{
+    border: 8px solid black;
+    border-radius: 2px;
+}
+
+/*list styling*/
+li{
+    font-style: italic;
+    font-size: 1.1rem;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+  
+li{
+    position: relative;
+    padding-left: 20px;
+}
+  
+ul li:before{
+    content: "\25C6"; 
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+ol{
+    counter-reset: roman-counter;
+    list-style-type: none;
+}
+
+ol li{
+    position: relative;
+}
+  
+ol li:before{
+    content: counter(roman-counter, upper-roman) ". ";
+    counter-increment: roman-counter;
+    position: absolute;
+    left: -20px;
+}
