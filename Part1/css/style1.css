@@ -1,0 +1,90 @@
+
+/*class selector used*/
+.wrapper{
+    background-color: #ac892a96;
+    margin: 0 auto;
+    width: 80%;
+    border: 20px solid black;
+}
+
+/*element selector used*/
+body{
+    color: #333;
+}
+
+img{
+    border: 5px solid black;
+    border-radius: 30px;
+    height: 500px;
+    width: auto;
+    margin: 30px;
+    animation-name: pop-up;
+    animation-duration: 2s;
+}
+
+p{
+    color: initial;
+    margin: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+section:nth-child(1){
+    display: flex;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+/*pseudo-class selector used*/
+h1:hover{
+    color: #0000ff;
+}
+
+/*adjacent sibling selector used*/
+section+section{
+    text-align: center;
+}
+
+/*child selector used*/
+ul>li{
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 30%;
+    font-size: 20px;
+}
+
+/*descendent selector used*/
+footer p{
+    font-size: 10px;
+}
+
+header h1{
+    font-size: 60px;
+}
+
+
+
+
+
+li:nth-child(odd){
+    font-weight: bold;
+}
+
+@keyframes pop-up{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+h1, h2, h3{
+    font-size: 2rem;
+}
+
