@@ -1,0 +1,105 @@
+/*text styling*/
+p {
+  color: initial;
+  margin: 30px;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+section + section {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+}
+
+/*page over view css*/
+body {
+  background: radial-gradient(#dbd8d9 0, #2f1a09 100%) !important;
+}
+
+section:nth-child(1) {
+  display: flex;
+}
+
+.wrapper {
+  background-color: #ac892a96;
+  width: 80vw;
+  border: 20px solid #000;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*styling inside wrapper*/
+img {
+  border: 5px solid #000;
+  border-radius: 30px;
+  height: 65vh;
+  width: 35vw;
+  margin: 30px;
+  animation-name: pop-up;
+  animation-duration: 2s;
+}
+
+h1:hover {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+img:hover {
+  filter: brightness(1.4) drop-shadow(12px 12px 15px #000);
+}
+
+.wrapper header {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(245, 245, 220, 0.575);
+}
+
+/*list styling*/
+ul > li {
+  list-style-position: inside;
+  text-align: left;
+  padding-left: 30%;
+  font-size: 20px;
+}
+
+li:nth-child(odd) {
+  font-weight: 700;
+}
+
+/*animations*/
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
