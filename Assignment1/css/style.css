@@ -1,0 +1,188 @@
+/*locally hosted and online web fonts*/
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Pacifico&family=Staatliches&display=swap");
+
+@font-face {
+  font-family: font1;
+  src: url(../fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../fonts/Tinos-Bold.ttf);
+}
+
+/*general page design*/
+
+/*using id selector here*/
+#css-zen-garden {
+  color: black;
+  background-image: url(../images/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+/*using class selector here*/
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  background: linear-gradient(
+    265deg,
+    rgba(209, 158, 93, 0.5729691534817052) 0%,
+    rgba(90, 138, 150, 0.9091036072632178) 100%
+  );
+  border: 2px dashed #ae9999;
+  padding-left: 2%;
+  font-family: "Oswald", sans-serif;
+  animation-name: pop-up;
+  animation-duration: 2s;
+}
+
+/*using direct sibling combinator here*/
+section + div + aside {
+  background: #edf4f0;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  margin-left: 600px;
+  position: fixed;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: linear-gradient(
+    265deg,
+    rgba(202, 185, 58, 0.8502800778514531) 0%,
+    rgba(206, 183, 161, 0.9203080890559349) 100%
+  );
+}
+
+.intro,
+.main-supporting {
+  margin-right: 26%;
+  margin-left: 5%;
+}
+
+/*using type selector here*/
+li {
+  line-height: 2.5em;
+}
+
+/*using attribute selector here*/
+nav[role="navigation"] {
+  margin-left: 10px;
+}
+
+/*Links Styling*/
+
+/*using descendent combinator here*/
+p a {
+  color: #501248;
+  text-decoration: none;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: #040607;
+  font-family: "Pacifico", cursive;
+  font-size: 1.1em;
+}
+
+aside a:link {
+  color: #040607;
+}
+
+aside a:visited {
+  color: #501248;
+}
+
+aside a:focus {
+  color: #112b45;
+}
+
+aside a:hover {
+  color: #433535;
+  background-color: #0000002d;
+  font-style: normal;
+}
+
+aside a:active {
+  color: #2e2504;
+}
+
+/*styling headings*/
+
+h1 {
+  text-align: center;
+  margin-top: 3%;
+  padding: 4% 0.5%;
+  font-size: 3rem;
+  border: 10px #c5b77f solid;
+  font-family: "Staatliches", cursive;
+}
+
+/*using pseudo-class selector here*/
+h1:hover {
+  background-color: #14050590;
+  color: azure;
+}
+
+h2,
+.summary {
+  text-align: center;
+  font-family: "font2", sans-serif;
+}
+
+h3 {
+  font-family: "Font1", sans-serif;
+  font-size: 1.4rem;
+}
+
+/*using child combinator here*/
+aside > h3 {
+  font-family: default;
+}
+
+/*using general sibling combinator here*/
+h3 ~ p {
+  font-size: 1.2rem;
+}
+
+/*footer-specific styling*/
+
+footer {
+  padding: 2% 10%;
+  border: 5px #c5b77f solid;
+  background-color: #ae9999;
+}
+
+footer a {
+  margin-left: 12%;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+/*abbreviation styling*/
+
+abbr {
+  text-decoration: none;
+  color: #112b45;
+  font-family: "font2", sans-serif;
+}
+
+/*Animation*/
+
+@keyframes pop-up {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
